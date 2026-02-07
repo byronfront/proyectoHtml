@@ -1,0 +1,116 @@
+/* Título de página interior */
+.pagina-titulo {
+    background: linear-gradient(135deg, var(--color-primario) 0%, var(--color-primario-oscuro) 100%);
+    color: #fff;
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.pagina-titulo h1 {
+    margin: 0 0 0.5rem;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.pagina-titulo p {
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Info restaurante – Grid */
+.info-restaurante {
+    padding: 2rem 0;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.info-card {
+    background: var(--color-superficie);
+    border: 1px solid var(--color-borde);
+    padding: 1.5rem;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+}
+
+.info-card h2 {
+    margin: 0 0 1rem;
+    color: var(--color-primario);
+    font-size: 1.25rem;
+}
+
+.info-card address {
+    font-style: normal;
+    line-height: 1.6;
+}
+
+.horarios,
+.redes {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.horarios li,
+.redes li {
+    margin-bottom: 0.5rem;
+}
+
+.redes a:hover {
+    text-decoration: underline;
+}
+
+/* Mapa */
+.mapa-section {
+    padding: 0 0 3rem;
+}
+
+.mapa-section h2 {
+    margin: 0 0 1rem;
+    color: var(--color-primario);
+    font-size: 1.35rem;
+}
+
+.mapa-referencial {
+    background: var(--color-superficie);
+    border: 1px solid var(--color-borde);
+    padding: 1rem;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+}
+
+.mapa-referencial figure {
+    margin: 0;
+}
+
+.mapa-img,
+.mapa-placeholder {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.mapa-placeholder {
+    min-height: 200px;
+    background: var(--color-crema);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5D3A1A;
+    font-size: 1rem;
+    padding: 1.5rem;
+}
+
+.mapa-referencial figcaption {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: #5D3A1A;
+}
+
+/* Responsive – contacto */
+@media (max-width: 480px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}

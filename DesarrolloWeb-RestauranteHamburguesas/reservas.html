@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas | Restaurante de Hamburguesas Artesanales</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reservas.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="./assets/img/logo.png" alt="Burger Artesanal">
+                <span>Burger Artesanal</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="menu.html">Menú</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="pagina-titulo">
+            <div class="container">
+                <h1>Reserva tu mesa</h1>
+                <p>Completa el formulario y te confirmaremos tu reserva.</p>
+            </div>
+        </section>
+
+        <section class="formulario-section">
+            <div class="container container-form">
+                <form class="formulario reservas-form" action="#" method="get">
+                    <div class="form-row">
+                        <label for="nombre">Nombre del cliente</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+                    </div>
+                    <div class="form-row">
+                        <label for="personas">Número de personas</label>
+                        <input type="number" id="personas" name="personas" min="1" max="20" value="2" required>
+                    </div>
+                    <div class="form-row form-row-doble">
+                        <div class="form-group">
+                            <label for="fecha">Fecha</label>
+                            <input type="date" id="fecha" name="fecha" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="hora">Hora</label>
+                            <input type="time" id="hora" name="hora" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" required placeholder="Ej: 300 123 4567">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com">
+                    </div>
+                    <div class="form-row">
+                        <label for="sede">Selección de sede</label>
+                        <select id="sede" name="sede" required>
+                            <option value="">Elige una sede</option>
+                            <option value="centro">Sede Centro</option>
+                            <option value="norte">Sede Norte</option>
+                            <option value="sur">Sede Sur</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="comentarios">Comentarios adicionales</label>
+                        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Alergias, celebración especial, mesa al aire libre..."></textarea>
+                    </div>
+                    <div class="form-botones">
+                        <button type="submit" class="btn btn-primary">Enviar reserva</button>
+                        <button type="reset" class="btn btn-secondary">Limpiar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <p>&copy; 2025 Burger Artesanal. Todos los derechos reservados.</p>
+            <nav class="footer-nav">
+                <a href="index.html">Inicio</a>
+                <a href="menu.html">Menú</a>
+                <a href="reservas.html">Reservas</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

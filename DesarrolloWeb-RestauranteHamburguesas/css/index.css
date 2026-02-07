@@ -1,0 +1,142 @@
+/* Banner */
+.banner {
+    background: linear-gradient(135deg, rgba(93, 58, 26, 0.85) 0%, rgba(93, 58, 26, 0.75) 100%),
+                url('../assets/img/banner_principal.png') center / cover no-repeat;
+    color: #fff;
+    padding: 4rem 1.5rem;
+    text-align: center;
+}
+
+.banner-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.banner h1 {
+    margin: 0 0 0.75rem;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+.banner p {
+    margin: 0 0 1.5rem;
+    opacity: 0.95;
+    font-size: 1.1rem;
+}
+
+/* Descripción */
+.descripcion {
+    padding: 3rem 0;
+}
+
+.descripcion h2 {
+    margin: 0 0 1.25rem;
+    color: var(--color-primario);
+    font-size: 1.75rem;
+}
+
+.descripcion-content p {
+    margin: 0 0 1rem;
+}
+
+.descripcion-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Tarjetas productos – Flexbox */
+.productos-destacados {
+    padding: 2rem 0 4rem;
+}
+
+.productos-destacados h2 {
+    margin: 0 0 1.5rem;
+    color: var(--color-primario);
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.tarjetas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.tarjeta-producto {
+    background: var(--color-superficie);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    overflow: hidden;
+    flex: 1 1 280px;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s;
+}
+
+.tarjeta-producto:hover {
+    box-shadow: var(--sombra-hover);
+}
+
+.tarjeta-imagen {
+    aspect-ratio: 16 / 10;
+    background: linear-gradient(145deg, #D4C4A8 0%, #B8A088 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjeta-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tarjeta-placeholder {
+    color: rgba(255, 251, 245, 0.95);
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-shadow: 0 1px 3px rgba(45, 24, 10, 0.4);
+}
+
+.tarjeta-body {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.tarjeta-body h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+    color: var(--color-primario-oscuro);
+}
+
+.tarjeta-body p {
+    margin: 0 0 0.75rem;
+    font-size: 0.95rem;
+    color: #4A3728;
+    flex-grow: 1;
+}
+
+.precio {
+    font-weight: 700;
+    color: var(--color-primario);
+    font-size: 1.1rem;
+}
+
+/* Responsive – página principal */
+@media (max-width: 768px) {
+    .banner {
+        padding: 3rem 1rem;
+    }
+
+    .tarjetas-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta-producto {
+        max-width: 100%;
+    }
+}

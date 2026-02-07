@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Gráfico — Trabajos visuales y multimedia</title>
+</head>
+<body style="font-family: sans-serif; margin: 0; padding: 0; background: #f5f5f5;">
+    <header style="background: #333; color: #fff; padding: 24px; text-align: center;">
+        <h1 style="margin: 0 0 8px 0;">Portafolio Gráfico</h1>
+        <p style="margin: 0; opacity: 0.9;">Trabajos visuales y proyectos multimedia</p>
+    </header>
+
+    <main style="max-width: 800px; margin: 0 auto; padding: 32px;">
+        <section id="presentacion" style="background: #fff; padding: 24px; margin-bottom: 32px; border-radius: 8px;">
+            <h2 style="margin-top: 0; color: #333;">Sobre este portafolio</h2>
+            <p style="color: #555;">Selección de proyectos: imágenes, video, audio y gráficos SVG.</p>
+        </section>
+
+        <section id="galeria" style="background: #fff; padding: 24px; margin-bottom: 32px; border-radius: 8px;">
+            <h2 style="margin-top: 0; color: #333;">Galería de imágenes</h2>
+            <p style="color: #555;">Imágenes de presentación.</p>
+
+            <figure style="margin: 24px 0;">
+                <picture>
+                    <source media="(min-width: 800px)" srcset="assets/images/file_example_JPG_1MB.jpg">
+                    <img src="./assets/images/file_example_JPG_100kB.jpg" alt="Obra 1" style="max-width: 100%; height: auto; display: block;">
+                </picture>
+                <figcaption style="margin-top: 8px; color: #666; font-size: 14px;">Imágen 1</figcaption>
+            </figure>
+
+            <figure style="margin: 24px 0;">
+                <picture>
+                    <source media="(min-width: 800px)" srcset="assets/images/file_example_PNG_1MB.png">
+                    <img src="./assets/images/file_example_PNG_500kB.png" alt="Obra 2" style="max-width: 100%; height: auto; display: block;">
+                </picture>
+                <figcaption style="margin-top: 8px; color: #666; font-size: 14px;">Imágen 2</figcaption>
+            </figure>
+        </section>
+
+        <section id="multimedia" style="background: #fff; padding: 24px; margin-bottom: 32px; border-radius: 8px;">
+            <h2 style="margin-top: 0; color: #333;">Multimedia</h2>
+            <p style="color: #555;">Video de presentación.</p>
+            <video controls width="640" height="360" preload="metadata" style="max-width: 100%; height: auto;">
+                <source src="./assets/video/file_example_MP4_640_3MG.mp4" type="video/mp4">
+                <source src="./assets/video/file_example_OOG_1MG.ogg" type="video/ogg">
+                <p>Tu navegador no soporta la reproducción de video HTML5. Puedes <a href="assets/video/file_example_MP4_640_3MG.mp4">descargar el video</a>.</p>
+            </video>
+        </section>
+
+        <section id="audio" style="background: #fff; padding: 24px; margin-bottom: 32px; border-radius: 8px;">
+            <h2 style="margin-top: 0; color: #333;">Audio</h2>
+            <p style="color: #555;">Audio de presentación.</p>
+            <audio controls preload="metadata">
+                <source src="./assets/audio/file_example_MP3_700KB.mp3" type="audio/mpeg">
+                <source src="./assets/audio/file_example_WAV_1MG.wav" type="audio/wav">
+                <p>Tu navegador no soporta la reproducción de audio HTML5. Puedes <a href="assets/audio/file_example_MP3_700KB.mp3">descargar el audio</a>.</p>
+            </audio>
+        </section>
+
+        <section id="grafico-svg" style="background: #fff; padding: 24px; margin-bottom: 32px; border-radius: 8px;">
+            <h2 style="margin-top: 0; color: #333;">Gráfico SVG</h2>
+            <p style="color: #555;">Iconos SVG de presentación.</p>
+
+            <figure style="margin: 24px 0;">
+                <figcaption style="margin-bottom: 8px; color: #666; font-size: 14px;">SVG embebido en HTML</figcaption>
+                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" role="img" aria-labelledby="svg-logo-title">
+                    <title id="svg-logo-title">Logo del portafolio gráfico</title>
+                    <rect x="15" y="25" width="90" height="70" rx="6" fill="#2d3748" stroke="#4a5568" stroke-width="2"/>
+                    <path d="M15 45 L15 35 Q15 25 25 25 L45 25 L55 15 L95 15 Q105 15 105 25 L105 35" fill="none" stroke="#4a5568" stroke-width="2" stroke-linejoin="round"/>
+                    <circle cx="60" cy="60" r="18" fill="#3182ce"/>
+                    <path d="M60 50 L60 70 M50 60 L70 60" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+            </figure>
+
+            <p style="color: #555; margin-top: 24px;">Iconos SVG</code>:</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 20px;">
+                <figure style="margin: 0; text-align: center;">
+                    <img src="./assets/svg/air-ticket-svgrepo-com.svg" alt="Billete de avión" width="64" height="64" style="object-fit: contain;">
+                    <figcaption style="margin-top: 6px; color: #666; font-size: 12px;">Billete</figcaption>
+                </figure>
+                <figure style="margin: 0; text-align: center;">
+                    <img src="./assets/svg/bag-svgrepo-com.svg" alt="Bolso" width="64" height="64" style="object-fit: contain;">
+                    <figcaption style="margin-top: 6px; color: #666; font-size: 12px;">Bolso</figcaption>
+                </figure>
+                <figure style="margin: 0; text-align: center;">
+                    <img src="./assets/svg/bank-card-svgrepo-com.svg" alt="Tarjeta bancaria" width="64" height="64" style="object-fit: contain;">
+                    <figcaption style="margin-top: 6px; color: #666; font-size: 12px;">Tarjeta</figcaption>
+                </figure>
+                <figure style="margin: 0; text-align: center;">
+                    <img src="./assets/svg/bbq-svgrepo-com.svg" alt="Barbacoa" width="64" height="64" style="object-fit: contain;">
+                    <figcaption style="margin-top: 6px; color: #666; font-size: 12px;">Barbacoa</figcaption>
+                </figure>
+                <figure style="margin: 0; text-align: center;">
+                    <img src="./assets/svg/building-svgrepo-com.svg" alt="Edificio" width="64" height="64" style="object-fit: contain;">
+                    <figcaption style="margin-top: 6px; color: #666; font-size: 12px;">Edificio</figcaption>
+                </figure>
+                <figure style="margin: 0; text-align: center;">
+                    <img src="./assets/svg/camera-svgrepo-com.svg" alt="Cámara" width="64" height="64" style="object-fit: contain;">
+                    <figcaption style="margin-top: 6px; color: #666; font-size: 12px;">Cámara</figcaption>
+                </figure>
+                <figure style="margin: 0; text-align: center;">
+                    <img src="./assets/svg/coconut-tree-svgrepo-com.svg" alt="Palmera" width="64" height="64" style="object-fit: contain;">
+                    <figcaption style="margin-top: 6px; color: #666; font-size: 12px;">Palmera</figcaption>
+                </figure>
+                <figure style="margin: 0; text-align: center;">
+                    <img src="./assets/svg/compass-svgrepo-com.svg" alt="Brújula" width="64" height="64" style="object-fit: contain;">
+                    <figcaption style="margin-top: 6px; color: #666; font-size: 12px;">Brújula</figcaption>
+                </figure>
+                <figure style="margin: 0; text-align: center;">
+                    <img src="./assets/svg/diving-goggles-svgrepo-com.svg" alt="Gafas de buceo" width="64" height="64" style="object-fit: contain;">
+                    <figcaption style="margin-top: 6px; color: #666; font-size: 12px;">Buceo</figcaption>
+                </figure>
+                <figure style="margin: 0; text-align: center;">
+                    <img src="./assets/svg/drinks-svgrepo-com.svg" alt="Bebidas" width="64" height="64" style="object-fit: contain;">
+                    <figcaption style="margin-top: 6px; color: #666; font-size: 12px;">Bebidas</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background: #333; color: #fff; padding: 16px; text-align: center; margin-top: 32px;">
+        <p style="margin: 0; font-size: 14px;">Portafolio gráfico</p>
+    </footer>
+</body>
+</html>

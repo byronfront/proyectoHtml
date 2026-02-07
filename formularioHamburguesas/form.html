@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pedido - Tienda de Hamburguesas</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <h1>Pedido de Hamburguesas</h1>
+    
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Datos del Cliente</legend>
+            
+            <label for="nombre">Nombre *</label>
+            <br>
+            <input 
+                type="text" 
+                id="nombre" 
+                name="nombre" 
+                required 
+                placeholder="Ingrese su nombre completo"
+            >
+            <br>
+            <br>
+            
+            <label for="email">Correo electrónico *</label>
+            <br>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required 
+                placeholder="ejemplo@correo.com"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            >
+            <br>
+            <br>
+            
+            <label for="telefono">Teléfono *</label>
+            <br>
+            <input 
+                type="tel" 
+                id="telefono" 
+                name="telefono" 
+                required 
+                placeholder="1234567890"
+            >
+        </fieldset>
+
+        <fieldset>
+            <legend>Pedido</legend>
+            
+            <label for="tipo_hamburguesa">Tipo de hamburguesa *</label>
+            <br>
+            <br>
+            <input type="radio" id="clasica" name="tipo_hamburguesa" value="clasica" required>
+            <label for="clasica">Clásica</label>
+            
+            <br>
+            <input type="radio" id="doble_carne" name="tipo_hamburguesa" value="doble_carne" required>
+            <label for="doble_carne">Doble carne</label>
+            
+            <br>
+            <input type="radio" id="vegetariana" name="tipo_hamburguesa" value="vegetariana" required>
+            <label for="vegetariana">Vegetariana</label>
+            <br>
+            <br>
+            
+            <label for="ingredientes_extra">Ingredientes extra</label>
+            <br>
+            <br>
+            <input type="checkbox" id="queso" name="ingredientes_extra" value="queso">
+            <label for="queso">Queso</label>
+            
+            <br>
+            <input type="checkbox" id="tocineta" name="ingredientes_extra" value="tocineta">
+            <label for="tocineta">Tocineta</label>
+            
+            <br>
+            <input type="checkbox" id="huevo" name="ingredientes_extra" value="huevo">
+            <label for="huevo">Huevo</label>
+            <br>
+            <br>
+            
+            <label for="cantidad">Cantidad *</label>
+            <br>
+            <input 
+                type="number" 
+                id="cantidad" 
+                name="cantidad" 
+                min="1" 
+                max="5" 
+                required 
+                value="1"
+            >
+            <br>
+            <br>
+            
+            <label for="comentarios">Comentarios adicionales</label>
+            <br>
+            <textarea 
+                id="comentarios" 
+                name="comentarios" 
+                placeholder="Ingrese información adicional"
+            ></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Entrega</legend>
+            
+            <label for="direccion">Dirección *</label>
+            <br>
+            <input 
+                type="text" 
+                id="direccion" 
+                name="direccion" 
+                required 
+                placeholder="Ingrese la dirección de entrega"
+            >
+            <br>
+            <br>
+            
+            <label for="forma_pago">Forma de pago *</label>
+            <br>
+            <select id="forma_pago" name="forma_pago" required>
+                <option value="">Seleccione una opción</option>
+                <option value="efectivo">Efectivo</option>
+                <option value="tarjeta">Tarjeta</option>
+                <option value="transferencia">Transferencia</option>
+            </select>
+        </fieldset>
+
+        <br>
+        <section class="form-buttons">
+            <button type="submit">Realizar pedido</button>
+            <button type="reset">Limpiar formulario</button>
+        </section>
+    </form>
+</body>
+</html>

@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: #e8e8e8;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 2px solid #e94560;
+}
+
+header h1 {
+    margin: 0 0 0.5rem;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+header p {
+    margin: 0 0 1.5rem;
+    font-size: 1.2rem;
+    color: #e94560;
+}
+
+header nav {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+header nav a {
+    color: #e94560;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+main section, main aside {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    border-left: 4px solid #e94560;
+}
+
+main section h2, main aside h2 {
+    margin: 0 0 1.5rem;
+    color: #e94560;
+    font-size: 1.75rem;
+}
+
+main section h2:first-child {
+    margin-bottom: 1rem;
+}
+
+main section h3 {
+    margin: 0 0 0.5rem;
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+main section p, main aside p {
+    margin: 0;
+    color: #d0d0d0;
+}
+
+main section ul, main aside ul {
+    margin: 0;
+    padding-left: 1.5rem;
+    color: #d0d0d0;
+}
+
+main section article {
+    padding: 1rem 0;
+}
+
+main section article p:not(:last-child) {
+    margin-bottom: 0.75rem;
+}
+
+main section ul li, main aside ul li {
+    margin-bottom: 0.25rem;
+}
+
+main aside p {
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.4);
+    border-top: 2px solid #e94560;
+}
+
+footer p {
+    margin: 0 0 0.5rem;
+}
+
+footer p:last-of-type {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+footer a {
+    color: #e94560;
+    text-decoration: none;
+    font-weight: 600;
+}

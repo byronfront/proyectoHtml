@@ -1,0 +1,99 @@
+/* Título de página interior */
+.pagina-titulo {
+    background: linear-gradient(135deg, var(--color-primario) 0%, var(--color-primario-oscuro) 100%);
+    color: #fff;
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.pagina-titulo h1 {
+    margin: 0 0 0.5rem;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.pagina-titulo p {
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Formulario */
+.formulario-section {
+    padding: 2rem 0 3rem;
+}
+
+.formulario {
+    background: var(--color-superficie);
+    border: 1px solid var(--color-borde);
+    padding: 2rem;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+}
+
+.form-row {
+    margin-bottom: 1.25rem;
+}
+
+.form-row label {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-weight: 600;
+    color: var(--color-texto);
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    font-size: 1rem;
+    font-family: inherit;
+    border: 1px solid var(--color-borde);
+    border-radius: 6px;
+    background: var(--color-superficie);
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+    outline: none;
+    border-color: var(--color-primario);
+    box-shadow: 0 0 0 3px rgba(139, 90, 43, 0.2);
+}
+
+.form-row-doble {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.form-botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.form-botones .btn {
+    min-width: 120px;
+}
+
+/* Responsive – reservas */
+@media (max-width: 768px) {
+    .form-row-doble {
+        grid-template-columns: 1fr;
+    }
+
+    .form-botones {
+        flex-direction: column;
+    }
+
+    .form-botones .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .formulario {
+        padding: 1.25rem;
+    }
+}

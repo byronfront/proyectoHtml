@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Perfil Personal - Byron Cardona</title>
+    <link rel="stylesheet" href="styles/personalForm.css">
+</head>
+<body>
+    <header>
+        <h1>Formulario de Perfil Personal</h1>
+        <p><strong>Byron Cardona</strong></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">← Volver al inicio</a></li>
+                <li><a href="index.html#sobre-mi">Sobre mí</a></li>
+                <li><a href="index.html#experiencia">Experiencia</a></li>
+                <li><a href="index.html#intereses">Intereses</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form method="post">
+            <fieldset>
+                <legend>Información General</legend>
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br>
+                <br>
+                <label for="edad">Edad *</label>
+                <input type="number" id="edad" name="edad" min="1" max="120" required>
+                <br>
+                <br>
+                <label for="ciudad">Ciudad *</label>
+                <input type="text" id="ciudad" name="ciudad" required minlength="2" maxlength="50" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+" title="Solo se permiten letras y espacios">
+            </fieldset>
+
+            <fieldset>
+                <legend>Gustos e Intereses</legend>
+                <span class="label-like">Hobbies *</span>
+                <br>
+                <label>
+                    <input type="checkbox" name="hobbies" value="Música" required>
+                    Música
+                </label>
+                <label>
+                    <input type="checkbox" name="hobbies" value="Deportes">
+                    Deportes
+                </label>
+                <label>
+                    <input type="checkbox" name="hobbies" value="Videojuegos">
+                    Videojuegos
+                </label>
+                <label>
+                    <input type="checkbox" name="hobbies" value="Lectura">
+                    Lectura
+                </label>
+                <label>
+                    <input type="checkbox" name="hobbies" value="Programación">
+                    Programación
+                </label>
+                <label for="genero-musical">Género Musical Favorito *</label>
+                <select id="genero-musical" name="genero-musical" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="rock">Rock</option>
+                    <option value="pop">Pop</option>
+                    <option value="jazz">Jazz</option>
+                    <option value="clasica">Música Clásica</option>
+                    <option value="electronica">Electrónica</option>
+                    <option value="reggaeton">Reggaetón</option>
+                    <option value="salsa">Salsa</option>
+                    <option value="hip-hop">Hip-Hop</option>
+                    <option value="country">Country</option>
+                    <option value="metal">Metal</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <br>
+                <br>
+                <label for="interes-tecnologia">Nivel de Interés en Tecnología * (1-10)</label>
+                <input type="range" id="interes-tecnologia" name="interes-tecnologia" min="1" max="10" value="5" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferencias</legend>
+                <label for="color-favorito">Color Favorito *</label>
+                <input type="color" id="color-favorito" name="color-favorito" value="#e94560" required>
+                <br>
+                <br>
+                <label for="fecha-cumpleanos">Fecha de Cumpleaños *</label>
+                <input type="date" id="fecha-cumpleanos" name="fecha-cumpleanos" required max="2025-12-31">
+                <br>
+                <br>
+                <label for="comentarios">Comentarios Personales</label>
+                <textarea id="comentarios" name="comentarios" maxlength="500"></textarea>
+            </fieldset>
+
+            <section class="form-buttons">
+                <button type="submit">Guardar perfil</button>
+                <button type="reset">Limpiar formulario</button>
+            </section>
+        </form>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Volver a la página principal</a></p>
+        <p>&copy; 2024 Byron Cardona. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
