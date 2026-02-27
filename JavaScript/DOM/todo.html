@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Inteligente — Reto 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="app">
+        <header class="header">
+            <h1>Lista de tareas</h1>
+            <p class="subtitle">Gestor dinámico sin frameworks</p>
+        </header>
+
+        <section class="input-section">
+            <input type="text" id="task-input" class="task-input" placeholder="Escribe una tarea..." autocomplete="off">
+            <button type="button" id="btn-add" class="btn btn-add">Agregar</button>
+        </section>
+
+        <section class="filters" aria-label="Filtros">
+            <button type="button" class="filter-btn active" data-filter="all">Todas</button>
+            <button type="button" class="filter-btn" data-filter="pending">Pendientes</button>
+            <button type="button" class="filter-btn" data-filter="completed">Completadas</button>
+        </section>
+
+        <section class="counter" aria-live="polite">
+            <span id="counter-total">Total: 0</span>
+            <span id="counter-pending">Pendientes: 0</span>
+            <span id="counter-completed">Completadas: 0</span>
+        </section>
+
+        <ul id="task-list" class="task-list" aria-label="Lista de tareas"></ul>
+
+        <p id="empty-message" class="empty-message" hidden>No hay tareas. Agrega una arriba.</p>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
