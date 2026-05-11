@@ -4,7 +4,12 @@ import { calcularPromedio } from './grades.js';
 function Student(nombre, notas) {
     this.nombre = capitalizarNombre(nombre);
     this.notas = calcularPromedio(notas);
-    this.estado = this.notas >= 3.0 ? 'Aprobado' : 'Reprobado';
+    this.estado =
+        typeof this.notas === 'number' && this.notas >= 3.0
+            ? 'Aprobado'
+            : typeof this.notas === 'number'
+              ? 'Reprobado'
+              : 'Sin evaluar';
     console.log("--------------------------------");
 }
 

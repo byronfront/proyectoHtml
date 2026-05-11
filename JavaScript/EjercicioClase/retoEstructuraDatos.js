@@ -16,7 +16,8 @@ const estudiantes = [
 
   console.log('Nombre estudiantes activos: ', nombreEstActivos)
 
-  const promedioEstudiantes = estudiantes.reduce((est, promedio) => est + promedio.nota / 5, 0)
+  const promedioEstudiantes =
+    estudiantes.reduce((acc, est) => acc + est.nota, 0) / estudiantes.length
 
   console.log('Promedio estudiantes: ', promedioEstudiantes)
 
